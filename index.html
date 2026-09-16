@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
 
 <title>Selamat Ulang Tahun Mami Rose ❤️</title>
+
 
 <style>
 
@@ -23,7 +30,12 @@ html{
 }
 
 body{
-    font-family:"Segoe UI",Arial,sans-serif;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
     background:
         linear-gradient(
             135deg,
@@ -31,7 +43,9 @@ body{
             #fff5f8,
             #ffd9e7
         );
+
     color:#5b3040;
+
     overflow-x:hidden;
 }
 
@@ -41,11 +55,15 @@ body{
 ===================================================== */
 
 .opening{
+
     position:fixed;
+
     inset:0;
+
     z-index:10000;
 
     display:flex;
+
     align-items:center;
     justify-content:center;
 
@@ -74,14 +92,19 @@ body{
 }
 
 .opening.hide{
+
     opacity:0;
+
     visibility:hidden;
 }
 
 .opening-card{
-    width:min(430px,92vw);
 
-    padding:45px 30px;
+    width:
+        min(430px,92vw);
+
+    padding:
+        45px 30px;
 
     text-align:center;
 
@@ -97,10 +120,12 @@ body{
     box-shadow:
         0 25px 70px
         rgba(130,45,80,.2),
+
         inset 0 1px 0
         rgba(255,255,255,.8);
 
-    backdrop-filter:blur(18px);
+    backdrop-filter:
+        blur(18px);
 
     animation:
         cardMasuk
@@ -112,14 +137,18 @@ body{
 @keyframes cardMasuk{
 
     from{
+
         opacity:0;
+
         transform:
             translateY(40px)
             scale(.85);
     }
 
     to{
+
         opacity:1;
+
         transform:
             translateY(0)
             scale(1);
@@ -127,6 +156,7 @@ body{
 }
 
 .envelope{
+
     font-size:85px;
 
     margin-bottom:20px;
@@ -141,12 +171,14 @@ body{
 @keyframes envelopeFloat{
 
     0%,100%{
+
         transform:
             translateY(0)
             rotate(-3deg);
     }
 
     50%{
+
         transform:
             translateY(-12px)
             rotate(3deg);
@@ -154,6 +186,7 @@ body{
 }
 
 .opening-card h1{
+
     color:#a52f5b;
 
     font-size:30px;
@@ -162,6 +195,7 @@ body{
 }
 
 .opening-card p{
+
     font-size:16px;
 
     line-height:1.6;
@@ -170,9 +204,11 @@ body{
 }
 
 .open-btn{
+
     border:none;
 
-    padding:15px 28px;
+    padding:
+        15px 28px;
 
     border-radius:50px;
 
@@ -199,6 +235,7 @@ body{
 }
 
 .open-btn:hover{
+
     transform:
         translateY(-3px)
         scale(1.04);
@@ -214,7 +251,9 @@ body{
 ===================================================== */
 
 .birthday-intro{
+
     position:fixed;
+
     inset:0;
 
     z-index:9999;
@@ -222,6 +261,7 @@ body{
     display:none;
 
     align-items:center;
+
     justify-content:center;
 
     flex-direction:column;
@@ -238,20 +278,27 @@ body{
 }
 
 .birthday-intro.active{
+
     display:flex;
 }
 
 .intro-text{
+
     position:absolute;
 
     width:100%;
 
-    padding:0 15px;
+    padding:
+        0 15px;
 
     text-align:center;
 
     font-size:
-        clamp(55px,13vw,150px);
+        clamp(
+            55px,
+            13vw,
+            150px
+        );
 
     font-weight:900;
 
@@ -261,6 +308,7 @@ body{
 
     text-shadow:
         0 5px 0 #fff,
+
         0 10px 25px
         rgba(150,30,80,.25);
 
@@ -272,9 +320,12 @@ body{
 }
 
 
-/* HAPPY */
+/* =====================================================
+   HAPPY
+===================================================== */
 
 .intro-happy.show{
+
     animation:
         introHappy
         1.5s
@@ -285,27 +336,35 @@ body{
 @keyframes introHappy{
 
     0%{
+
         opacity:0;
+
         transform:
             scale(.3)
             translateY(40px);
     }
 
     25%{
+
         opacity:1;
+
         transform:
             scale(1.15)
             translateY(0);
     }
 
     55%{
+
         opacity:1;
+
         transform:
             scale(1);
     }
 
     100%{
+
         opacity:0;
+
         transform:
             scale(1.25)
             translateY(-20px);
@@ -313,9 +372,12 @@ body{
 }
 
 
-/* BIRTHDAY */
+/* =====================================================
+   BIRTHDAY
+===================================================== */
 
 .intro-birthday.show{
+
     animation:
         introBirthday
         1.7s
@@ -326,27 +388,35 @@ body{
 @keyframes introBirthday{
 
     0%{
+
         opacity:0;
+
         transform:
             scale(.3)
             translateY(50px);
     }
 
     25%{
+
         opacity:1;
+
         transform:
             scale(1.12)
             translateY(0);
     }
 
     55%{
+
         opacity:1;
+
         transform:
             scale(1);
     }
 
     100%{
+
         opacity:0;
+
         transform:
             scale(1.25)
             translateY(-20px);
@@ -354,9 +424,12 @@ body{
 }
 
 
-/* MAMI ROSE */
+/* =====================================================
+   MAMI ROSE
+===================================================== */
 
 .intro-mami.show{
+
     animation:
         introMami
         2s
@@ -367,40 +440,52 @@ body{
 @keyframes introMami{
 
     0%{
+
         opacity:0;
+
         transform:
             scale(.25)
             translateY(60px);
     }
 
     25%{
+
         opacity:1;
+
         transform:
             scale(1.08)
             translateY(0);
     }
 
     55%{
+
         opacity:1;
+
         transform:
             scale(1);
     }
 
     75%{
+
         opacity:1;
+
         transform:
             scale(1.03);
     }
 
     100%{
+
         opacity:0;
+
         transform:
             scale(1.15);
     }
 }
 
 
-/* SPARKLE */
+/* =====================================================
+   SPARKLE
+===================================================== */
 
 .birthday-intro::before{
 
@@ -408,11 +493,13 @@ body{
         "✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨";
 
     position:absolute;
+
     inset:0;
 
     display:flex;
 
     align-items:center;
+
     justify-content:center;
 
     font-size:35px;
@@ -434,14 +521,18 @@ body{
 @keyframes sparkleIntro{
 
     0%,100%{
+
         opacity:.25;
+
         transform:
             scale(.8)
             rotate(0deg);
     }
 
     50%{
+
         opacity:1;
+
         transform:
             scale(1.15)
             rotate(5deg);
@@ -449,9 +540,12 @@ body{
 }
 
 
-/* INTRO FINISH */
+/* =====================================================
+   INTRO FINISH
+===================================================== */
 
 .birthday-intro.finish{
+
     animation:
         introFinish
         .8s
@@ -462,12 +556,16 @@ body{
 @keyframes introFinish{
 
     from{
+
         opacity:1;
+
         transform:scale(1);
     }
 
     to{
+
         opacity:0;
+
         transform:scale(1.08);
     }
 }
@@ -478,6 +576,7 @@ body{
 ===================================================== */
 
 .content{
+
     display:none;
 
     min-height:100vh;
@@ -499,9 +598,11 @@ body{
     flex-direction:column;
 
     align-items:center;
+
     justify-content:center;
 
-    padding:50px 20px;
+    padding:
+        50px 20px;
 
     text-align:center;
 
@@ -529,6 +630,7 @@ body{
         2s
         ease-in-out
         infinite,
+
         cakeGlow
         2s
         ease-in-out
@@ -538,17 +640,22 @@ body{
 @keyframes cakeBounce{
 
     0%,100%{
-        transform:translateY(0);
+
+        transform:
+            translateY(0);
     }
 
     50%{
-        transform:translateY(-12px);
+
+        transform:
+            translateY(-12px);
     }
 }
 
 @keyframes cakeGlow{
 
     0%,100%{
+
         filter:
             drop-shadow(
                 0 0 5px
@@ -557,6 +664,7 @@ body{
     }
 
     50%{
+
         filter:
             drop-shadow(
                 0 0 25px
@@ -568,7 +676,11 @@ body{
 .hero h1{
 
     font-size:
-        clamp(32px,7vw,65px);
+        clamp(
+            32px,
+            7vw,
+            65px
+        );
 
     color:#c72f65;
 
@@ -578,7 +690,11 @@ body{
 .hero h2{
 
     font-size:
-        clamp(24px,5vw,40px);
+        clamp(
+            24px,
+            5vw,
+            40px
+        );
 
     color:#8b3456;
 
@@ -599,11 +715,13 @@ body{
 
 .section{
 
-    width:min(900px,92vw);
+    width:
+        min(900px,92vw);
 
     margin:0 auto;
 
-    padding:70px 0;
+    padding:
+        70px 0;
 }
 
 .section-title{
@@ -619,7 +737,7 @@ body{
 
 
 /* =====================================================
-   CHAT UCAPAN
+   CHAT
 ===================================================== */
 
 .message-section{
@@ -630,12 +748,6 @@ body{
 
     gap:22px;
 }
-
-
-/*
-   SEMUA BUBBLE TERSEMBUNYI
-   SAAT AWAL
-*/
 
 .chat-message{
 
@@ -655,16 +767,12 @@ body{
 
     transition:
         opacity .6s ease,
+
         transform .6s
         cubic-bezier(.34,1.56,.64,1),
+
         visibility 0s linear .6s;
 }
-
-
-/*
-   SAAT JAVASCRIPT MENAMBAHKAN
-   CLASS "show"
-*/
 
 .chat-message.show{
 
@@ -678,15 +786,17 @@ body{
 
     transition:
         opacity .6s ease,
+
         transform .6s
         cubic-bezier(.34,1.56,.64,1),
+
         visibility 0s linear 0s;
 }
-
 
 .chat-profile{
 
     width:48px;
+
     height:48px;
 
     flex-shrink:0;
@@ -729,7 +839,8 @@ body{
 
     display:inline-block;
 
-    padding:13px 17px;
+    padding:
+        13px 17px;
 
     background:#fff;
 
@@ -754,9 +865,11 @@ body{
     position:absolute;
 
     top:0;
+
     left:-8px;
 
     width:14px;
+
     height:14px;
 
     background:#fff;
@@ -802,20 +915,20 @@ body{
 
     color:#8b3456;
 
-    padding:0 10px;
+    padding:
+        0 10px;
 }
 
 .memory-row{
 
-    display:grid;
+    display:block;
 
-    grid-template-columns:
-        repeat(2,1fr);
-
-    gap:18px;
+    width:100%;
 }
 
 .memory-item{
+
+    width:100%;
 
     opacity:0;
 
@@ -827,6 +940,7 @@ body{
 
     transition:
         opacity .8s ease,
+
         transform .8s ease;
 }
 
@@ -845,7 +959,8 @@ body{
 
     width:100%;
 
-    aspect-ratio:1 / 1;
+    aspect-ratio:
+        16 / 10;
 
     object-fit:cover;
 
@@ -901,14 +1016,17 @@ body{
 @keyframes heartBeat{
 
     0%,100%{
+
         transform:scale(1);
     }
 
     30%{
+
         transform:scale(1.2);
     }
 
     50%{
+
         transform:scale(1);
     }
 }
@@ -951,11 +1069,13 @@ body{
     position:fixed;
 
     right:20px;
+
     bottom:20px;
 
     z-index:9000;
 
     width:52px;
+
     height:52px;
 
     border:none;
@@ -965,6 +1085,7 @@ body{
     display:none;
 
     align-items:center;
+
     justify-content:center;
 
     background:#d6336c;
@@ -1003,6 +1124,7 @@ body{
     display:none;
 
     align-items:center;
+
     justify-content:center;
 
     padding:20px;
@@ -1041,12 +1163,16 @@ body{
 @keyframes lightboxIn{
 
     from{
+
         opacity:0;
+
         transform:scale(.8);
     }
 
     to{
+
         opacity:1;
+
         transform:scale(1);
     }
 }
@@ -1076,6 +1202,7 @@ body{
 @keyframes rainDown{
 
     from{
+
         transform:
             translateY(-80px)
             rotate(0deg);
@@ -1084,6 +1211,7 @@ body{
     }
 
     to{
+
         transform:
             translateY(110vh)
             rotate(360deg);
@@ -1091,7 +1219,6 @@ body{
         opacity:0;
     }
 }
-
 
 .floating-balloon,
 .floating-heart{
@@ -1122,10 +1249,12 @@ body{
     }
 
     10%{
+
         opacity:1;
     }
 
     90%{
+
         opacity:1;
     }
 
@@ -1139,7 +1268,6 @@ body{
     }
 }
 
-
 .confetti{
 
     position:fixed;
@@ -1149,6 +1277,7 @@ body{
     z-index:12001;
 
     width:9px;
+
     height:16px;
 
     pointer-events:none;
@@ -1182,113 +1311,171 @@ body{
 
 
 /* =====================================================
-   MOBILE
+   MODE SLIDE — NORMAL SCROLL, NAVIGASI DI BAWAH KONTEN
+   Tidak fixed, tidak overlay, tidak mengunci tinggi halaman.
 ===================================================== */
 
+html, body{
+    width:100%;
+    min-height:100%;
+    margin:0;
+    padding:0;
+}
+
+body.ppt-mode{
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+body.ppt-mode main.content{
+    width:100%;
+    min-height:0;
+    height:auto;
+    margin:0;
+    padding:0;
+    overflow:visible;
+    position:relative;
+}
+
+body.ppt-mode main.content > .ppt-slide{
+    display:none !important;
+    width:100%;
+    min-height:100vh;
+    min-height:100dvh;
+    height:auto !important;
+    margin:0 !important;
+    padding:clamp(22px,4vh,45px) clamp(14px,4vw,40px) 30px;
+    box-sizing:border-box;
+    overflow:visible !important;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:stretch;
+    opacity:0;
+    transform:translateX(25px);
+}
+
+body.ppt-mode main.content > .ppt-slide.ppt-active{
+    display:flex !important;
+    opacity:1;
+    transform:none;
+    animation:pptSlideIn .35s ease forwards;
+}
+
+@keyframes pptSlideIn{
+    from{opacity:0;transform:translateX(20px)}
+    to{opacity:1;transform:none}
+}
+
+.ppt-slide-inner{
+    width:min(900px,100%);
+    margin:0 auto;
+    box-sizing:border-box;
+    flex:0 0 auto;
+}
+
+body.ppt-mode main.content > .hero,
+body.ppt-mode main.content > .section,
+body.ppt-mode main.content > .closing{
+    min-height:100vh;
+    min-height:100dvh;
+    height:auto !important;
+    box-sizing:border-box;
+}
+
+body.ppt-mode .hero .ppt-slide-inner{
+    width:min(900px,100%);
+    min-height:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+body.ppt-mode .section .ppt-slide-inner,
+body.ppt-mode .closing .ppt-slide-inner{
+    width:min(900px,100%);
+    min-height:0;
+    margin:0 auto;
+}
+
+/* Foto TIDAK dipotong oleh mode slide */
+body.ppt-mode .memory-item img{
+    width:100%;
+    max-width:100%;
+    height:auto !important;
+    max-height:none !important;
+    object-fit:contain;
+}
+
+body.ppt-mode .memories,
+body.ppt-mode .message-section{
+    width:min(900px,100%);
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Footer benar-benar bagian dari slide dan berada setelah SEMUA konten */
+.ppt-slide-footer{
+    width:min(900px,100%);
+    margin:28px auto 0;
+    padding:10px 0 max(10px,env(safe-area-inset-bottom));
+    box-sizing:border-box;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    flex:0 0 auto;
+}
+
+.ppt-slide-footer button{
+    border:none;
+    border-radius:999px;
+    padding:11px 20px;
+    min-height:44px;
+    background:#d6336c;
+    color:#fff;
+    font:inherit;
+    font-size:14px;
+    font-weight:700;
+    cursor:pointer;
+    white-space:nowrap;
+    box-shadow:0 5px 15px rgba(214,51,108,.25);
+}
+
+.ppt-slide-footer button:disabled{opacity:.35;cursor:default}
+.ppt-counter{flex:1;min-width:45px;text-align:center;color:#7c3a54;font-size:13px;font-weight:700}
+
 @media(max-width:600px){
-
-    .opening-card{
-
-        padding:
-            38px 22px;
+    body.ppt-mode main.content > .ppt-slide{
+        min-height:100dvh;
+        padding:20px 12px 24px;
     }
-
-    .envelope{
-
-        font-size:70px;
+    body.ppt-mode main.content > .hero,
+    body.ppt-mode main.content > .section,
+    body.ppt-mode main.content > .closing{
+        min-height:100dvh;
     }
+    body.ppt-mode .hero .ppt-slide-inner{min-height:0;padding:15px 0}
+    body.ppt-mode .closing .ppt-slide-inner{min-height:0;padding:15px 0}
+    .ppt-slide-footer{margin-top:22px;gap:7px}
+    .ppt-slide-footer button{padding:9px 13px;min-height:42px;font-size:13px}
+    .ppt-counter{font-size:12px}
+}
 
-    .opening-card h1{
+@media(max-width:380px){
+    .ppt-slide-footer button{padding:8px 10px;font-size:12px}
+    .ppt-counter{font-size:11px}
+}
 
-        font-size:26px;
-    }
-
-    .intro-text{
-
-        font-size:
-            clamp(45px,15vw,90px);
-
-        letter-spacing:4px;
-    }
-
-    .birthday-intro::before{
-
-        font-size:22px;
-
-        letter-spacing:18px;
-    }
-
-    .cake{
-
-        font-size:75px;
-    }
-
-    .hero h1{
-
-        font-size:34px;
-    }
-
-    .hero h2{
-
-        font-size:27px;
-    }
-
-    .section{
-
-        padding:50px 0;
-    }
-
-    .section-title{
-
-        font-size:26px;
-    }
-
-    .chat-profile{
-
-        width:42px;
-        height:42px;
-    }
-
-    .chat-content{
-
-        max-width:
-            calc(100% - 52px);
-    }
-
-    .chat-name{
-
-        font-size:12px;
-    }
-
-    .chat-bubble{
-
-        padding:12px 14px;
-
-        font-size:14px;
-
-        border-radius:
-            4px 17px 17px 17px;
-    }
-
-    .memory-row{
-
-        gap:10px;
-    }
-
-    .memory-caption{
-
-        font-size:15px;
-    }
-
-    .music-btn{
-
-        right:15px;
-        bottom:15px;
-    }
-
+@media(max-height:650px){
+    body.ppt-mode main.content > .ppt-slide{min-height:100dvh}
+    body.ppt-mode .hero .ppt-slide-inner,
+    body.ppt-mode .closing .ppt-slide-inner{min-height:0}
 }
 
 </style>
+
 </head>
 
 
@@ -1338,16 +1525,25 @@ body{
     class="birthday-intro"
     id="birthdayIntro">
 
-    <div class="intro-text intro-happy">
+    <div
+        class="intro-text intro-happy">
+
         HAPPY
+
     </div>
 
-    <div class="intro-text intro-birthday">
+    <div
+        class="intro-text intro-birthday">
+
         BIRTHDAY
+
     </div>
 
-    <div class="intro-text intro-mami">
+    <div
+        class="intro-text intro-mami">
+
         MAMI ROSE
+
     </div>
 
 </div>
@@ -1363,7 +1559,7 @@ body{
 
 
     <!-- =================================================
-         HERO
+         SLIDE 1
     ================================================= -->
 
     <section class="hero">
@@ -1390,7 +1586,7 @@ body{
 
 
     <!-- =================================================
-         UCAPAN
+         SLIDE 2
     ================================================= -->
 
     <section class="section">
@@ -1403,14 +1599,13 @@ body{
         <div class="message-section">
 
 
-            <!-- BUBBLE 1 -->
-
             <div class="chat-message">
 
                 <img
                     class="chat-profile"
-                    src="images/foto1.jpg"
-                    alt="Foto profil Dede">
+                    src="images/1.jpeg"
+                    alt="Foto profil Dede"
+                >
 
                 <div class="chat-content">
 
@@ -1429,14 +1624,13 @@ body{
             </div>
 
 
-            <!-- BUBBLE 2 -->
-
             <div class="chat-message">
 
                 <img
                     class="chat-profile"
                     src="images/foto1.jpg"
-                    alt="Foto profil Dede">
+                    alt="Foto profil Dede"
+                >
 
                 <div class="chat-content">
 
@@ -1455,14 +1649,13 @@ body{
             </div>
 
 
-            <!-- BUBBLE 3 -->
-
             <div class="chat-message">
 
                 <img
                     class="chat-profile"
                     src="images/foto1.jpg"
-                    alt="Foto profil Dede">
+                    alt="Foto profil Dede"
+                >
 
                 <div class="chat-content">
 
@@ -1481,14 +1674,13 @@ body{
             </div>
 
 
-            <!-- BUBBLE 4 -->
-
             <div class="chat-message">
 
                 <img
                     class="chat-profile"
                     src="images/foto1.jpg"
-                    alt="Foto profil Dede">
+                    alt="Foto profil Dede"
+                >
 
                 <div class="chat-content">
 
@@ -1507,14 +1699,13 @@ body{
             </div>
 
 
-            <!-- BUBBLE 5 -->
-
             <div class="chat-message">
 
                 <img
                     class="chat-profile"
                     src="images/foto1.jpg"
-                    alt="Foto profil Dede">
+                    alt="Foto profil Dede"
+                >
 
                 <div class="chat-content">
 
@@ -1539,7 +1730,7 @@ body{
 
 
     <!-- =================================================
-         GALLERY
+         SLIDE 3 - FOTO 1
     ================================================= -->
 
     <section class="section">
@@ -1548,11 +1739,7 @@ body{
             📸 Kenangan Indah
         </h2>
 
-
         <div class="memories">
-
-
-            <!-- FOTO 1 & 2 -->
 
             <div class="memory-block">
 
@@ -1567,29 +1754,14 @@ body{
                     <div
                         class="memory-item"
                         onclick="
-                            openLightbox(
-                                'images/foto1.jpg'
-                            )
-                        ">
+                            openLightbox('images/1.jpeg')
+                        "
+                    >
 
                         <img
-                            src="images/foto1.jpg"
-                            alt="Kenangan 1">
-
-                    </div>
-
-
-                    <div
-                        class="memory-item"
-                        onclick="
-                            openLightbox(
-                                'images/foto2.jpg'
-                            )
-                        ">
-
-                        <img
-                            src="images/foto2.jpg"
-                            alt="Kenangan 2">
+                            src="images/1.jpeg"
+                            alt="Kenangan 1"
+                        >
 
                     </div>
 
@@ -1597,8 +1769,22 @@ body{
 
             </div>
 
+        </div>
 
-            <!-- FOTO 3 & 4 -->
+    </section>
+
+
+    <!-- =================================================
+         SLIDE 4 - FOTO 2
+    ================================================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            📸 Kenangan Indah
+        </h2>
+
+        <div class="memories">
 
             <div class="memory-block">
 
@@ -1613,29 +1799,14 @@ body{
                     <div
                         class="memory-item"
                         onclick="
-                            openLightbox(
-                                'images/foto3.jpg'
-                            )
-                        ">
+                            openLightbox('images/2.jpeg')
+                        "
+                    >
 
                         <img
-                            src="images/foto3.jpg"
-                            alt="Kenangan 3">
-
-                    </div>
-
-
-                    <div
-                        class="memory-item"
-                        onclick="
-                            openLightbox(
-                                'images/foto4.jpg'
-                            )
-                        ">
-
-                        <img
-                            src="images/foto4.jpg"
-                            alt="Kenangan 4">
+                            src="images/2.jpeg"
+                            alt="Kenangan 2"
+                        >
 
                     </div>
 
@@ -1643,8 +1814,22 @@ body{
 
             </div>
 
+        </div>
 
-            <!-- FOTO 5 & 6 -->
+    </section>
+
+
+    <!-- =================================================
+         SLIDE 5 - FOTO 3
+    ================================================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            📸 Kenangan Indah
+        </h2>
+
+        <div class="memories">
 
             <div class="memory-block">
 
@@ -1659,29 +1844,14 @@ body{
                     <div
                         class="memory-item"
                         onclick="
-                            openLightbox(
-                                'images/foto5.jpg'
-                            )
-                        ">
+                            openLightbox('images/3.jpeg')
+                        "
+                    >
 
                         <img
-                            src="images/foto5.jpg"
-                            alt="Kenangan 5">
-
-                    </div>
-
-
-                    <div
-                        class="memory-item"
-                        onclick="
-                            openLightbox(
-                                'images/foto6.jpg'
-                            )
-                        ">
-
-                        <img
-                            src="images/foto6.jpg"
-                            alt="Kenangan 6">
+                            src="images/3.jpeg"
+                            alt="Kenangan 3"
+                        >
 
                     </div>
 
@@ -1689,6 +1859,50 @@ body{
 
             </div>
 
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         SLIDE 6 - FOTO 4
+    ================================================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            📸 Kenangan Indah
+        </h2>
+
+        <div class="memories">
+
+            <div class="memory-block">
+
+                <div class="memory-caption">
+
+                    🌷 Setiap foto menyimpan cerita yang akan selalu dikenang.
+
+                </div>
+
+                <div class="memory-row">
+
+                    <div
+                        class="memory-item"
+                        onclick="
+                            openLightbox('images/4.jpg')
+                        "
+                    >
+
+                        <img
+                            src="images/4.jpg"
+                            alt="Kenangan 4"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -1696,7 +1910,97 @@ body{
 
 
     <!-- =================================================
-         CLOSING
+         SLIDE 7 - FOTO 5
+    ================================================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            📸 Kenangan Indah
+        </h2>
+
+        <div class="memories">
+
+            <div class="memory-block">
+
+                <div class="memory-caption">
+
+                    💖 Semoga selalu ada banyak momen indah yang bisa kita abadikan bersama.
+
+                </div>
+
+                <div class="memory-row">
+
+                    <div
+                        class="memory-item"
+                        onclick="
+                            openLightbox('images/5.jpg')
+                        "
+                    >
+
+                        <img
+                            src="images/5.jpg"
+                            alt="Kenangan 5"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         SLIDE 8 - FOTO 6
+    ================================================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            📸 Kenangan Indah
+        </h2>
+
+        <div class="memories">
+
+            <div class="memory-block">
+
+                <div class="memory-caption">
+
+                    ✨ Sebuah kenangan kecil yang akan selalu memiliki tempat spesial.
+
+                </div>
+
+                <div class="memory-row">
+
+                    <div
+                        class="memory-item"
+                        onclick="
+                            openLightbox('images/6.jpg')
+                        "
+                    >
+
+                        <img
+                            src="images/6.jpg"
+                            alt="Kenangan 6"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         SLIDE 9 - CLOSING
     ================================================= -->
 
     <section class="closing">
@@ -1719,8 +2023,10 @@ body{
 
             Selamat ulang tahun, Mami Rose. 🌷
             <br>
+
             Semoga selalu sehat, bahagia, dan dikelilingi
             <br>
+
             oleh orang-orang yang menyayangi.
 
         </p>
@@ -1777,7 +2083,8 @@ body{
     <img
         id="lightboxImage"
         src=""
-        alt="Foto">
+        alt="Foto"
+    >
 
 </div>
 
@@ -1802,31 +2109,49 @@ let memoryObserver = null;
 ===================================================== */
 
 const opening =
-    document.getElementById("opening");
+    document.getElementById(
+        "opening"
+    );
 
 const openButton =
-    document.getElementById("openButton");
+    document.getElementById(
+        "openButton"
+    );
 
 const birthdayIntro =
-    document.getElementById("birthdayIntro");
+    document.getElementById(
+        "birthdayIntro"
+    );
 
 const content =
-    document.getElementById("content");
+    document.getElementById(
+        "content"
+    );
 
 const audio =
-    document.getElementById("audio");
+    document.getElementById(
+        "audio"
+    );
 
 const musicBtn =
-    document.getElementById("musicBtn");
+    document.getElementById(
+        "musicBtn"
+    );
 
 const closeButton =
-    document.getElementById("closeButton");
+    document.getElementById(
+        "closeButton"
+    );
 
 const lightbox =
-    document.getElementById("lightbox");
+    document.getElementById(
+        "lightbox"
+    );
 
 const lightboxImage =
-    document.getElementById("lightboxImage");
+    document.getElementById(
+        "lightboxImage"
+    );
 
 
 /* =====================================================
@@ -1841,200 +2166,211 @@ openButton.addEventListener(
 
 function bukaKartu(){
 
-    /* RESET */
-
     resetBubbles();
 
     resetMemory();
 
 
-    /* OPENING HIDE */
+    /* =================================================
+       MUSIK
+    ================================================= */
 
-    opening.classList.add("hide");
+    audio.volume = 0.5;
 
-
-    setTimeout(function(){
-
-
-        opening.style.display =
-            "none";
+    audio.currentTime = 0;
 
 
-        /* =================================================
-           TAMPILKAN INTRO
-        ================================================= */
+    audio.play().then(
+        function(){
 
-        birthdayIntro.classList.add(
-            "active"
-        );
+            musicBtn.textContent =
+                "🎵";
 
+        }
+    ).catch(
+        function(){
 
-        const happy =
-            document.querySelector(
-                ".intro-happy"
-            );
+            musicBtn.textContent =
+                "🔇";
 
-        const birthday =
-            document.querySelector(
-                ".intro-birthday"
-            );
-
-        const mami =
-            document.querySelector(
-                ".intro-mami"
-            );
+        }
+    );
 
 
-        happy.classList.remove("show");
+    /* =================================================
+       OPENING
+    ================================================= */
 
-        birthday.classList.remove("show");
-
-        mami.classList.remove("show");
-
-
-        /* RESET ANIMATION */
-
-        void happy.offsetWidth;
-
-        void birthday.offsetWidth;
-
-        void mami.offsetWidth;
+    opening.classList.add(
+        "hide"
+    );
 
 
-        /* =================================================
-           HAPPY
-        ================================================= */
+    setTimeout(
+        function(){
 
-        setTimeout(function(){
-
-            happy.classList.add(
-                "show"
-            );
-
-        },300);
+            opening.style.display =
+                "none";
 
 
-        /* =================================================
-           BIRTHDAY
-        ================================================= */
-
-        setTimeout(function(){
-
-            birthday.classList.add(
-                "show"
-            );
-
-        },1800);
-
-
-        /* =================================================
-           MAMI ROSE
-        ================================================= */
-
-        setTimeout(function(){
-
-            mami.classList.add(
-                "show"
-            );
-
-        },3600);
-
-
-        /* =================================================
-           SELESAI INTRO
-        ================================================= */
-
-        setTimeout(function(){
-
+            /* =================================================
+               INTRO
+            ================================================= */
 
             birthdayIntro.classList.add(
-                "finish"
+                "active"
             );
 
 
-            setTimeout(function(){
+            const happy =
+                document.querySelector(
+                    ".intro-happy"
+                );
 
+            const birthday =
+                document.querySelector(
+                    ".intro-birthday"
+                );
 
-                birthdayIntro.classList.remove(
-                    "active",
-                    "finish"
+            const mami =
+                document.querySelector(
+                    ".intro-mami"
                 );
 
 
-                /* =================================================
-                   TAMPILKAN KARTU UTAMA
-                ================================================= */
+            happy.classList.remove(
+                "show"
+            );
 
-                content.style.display =
-                    "block";
+            birthday.classList.remove(
+                "show"
+            );
 
-
-                window.scrollTo({
-                    top:0,
-                    behavior:"instant"
-                });
-
-
-                /* =================================================
-                   MUSIK
-                ================================================= */
-
-                audio.volume = 0.5;
-
-                audio.currentTime = 0;
-
-                audio.play().catch(
-                    function(){}
-                );
+            mami.classList.remove(
+                "show"
+            );
 
 
-                musicBtn.style.display =
-                    "flex";
+            void happy.offsetWidth;
+
+            void birthday.offsetWidth;
+
+            void mami.offsetWidth;
 
 
-                /* =================================================
-                   EFFECT
-                ================================================= */
+            /* HAPPY */
 
-                hujanBalonDanLove();
+            setTimeout(
+                function(){
 
-                mulaiBalonTerbang();
+                    happy.classList.add(
+                        "show"
+                    );
 
-                mulaiHati();
-
-
-                /* =================================================
-                   BUBBLE UCAPAN
-                   
-                   INI YANG PENTING
-                   
-                   Bubble mulai setelah
-                   kartu utama tampil.
-                ================================================= */
-
-                setTimeout(
-                    mulaiUcapan,
-                    500
-                );
+                },
+                300
+            );
 
 
-                /* =================================================
-                   GALLERY
-                ================================================= */
+            /* BIRTHDAY */
 
-                setTimeout(
-                    setupMemoryObserver,
-                    100
-                );
+            setTimeout(
+                function(){
 
+                    birthday.classList.add(
+                        "show"
+                    );
 
-            },800);
-
-
-        },5700);
+                },
+                1800
+            );
 
 
-    },500);
+            /* MAMI ROSE */
+
+            setTimeout(
+                function(){
+
+                    mami.classList.add(
+                        "show"
+                    );
+
+                },
+                3600
+            );
+
+
+            /* =================================================
+               SELESAI
+            ================================================= */
+
+            setTimeout(
+                function(){
+
+                    birthdayIntro.classList.add(
+                        "finish"
+                    );
+
+
+                    setTimeout(
+                        function(){
+
+                            birthdayIntro.classList.remove(
+                                "active",
+                                "finish"
+                            );
+
+
+                            content.style.display =
+                                "block";
+
+
+                            if(
+                                typeof window.startPptPresentation ===
+                                "function"
+                            ){
+
+                                window.startPptPresentation();
+
+                            }
+
+
+                            musicBtn.style.display =
+                                "flex";
+
+
+                            hujanBalonDanLove();
+
+                            mulaiBalonTerbang();
+
+                            mulaiHati();
+
+
+                            setTimeout(
+                                mulaiUcapan,
+                                500
+                            );
+
+
+                            setTimeout(
+                                setupMemoryObserver,
+                                100
+                            );
+
+
+                        },
+                        800
+                    );
+
+
+                },
+                5700
+            );
+
+
+        },
+        500
+    );
 
 }
 
@@ -2045,28 +2381,25 @@ function bukaKartu(){
 
 function mulaiUcapan(){
 
-    /* Hapus timer sebelumnya */
-
     bubbleTimers.forEach(
         function(timer){
 
-            clearTimeout(timer);
+            clearTimeout(
+                timer
+            );
 
         }
     );
 
+
     bubbleTimers = [];
 
-
-    /* Ambil SEMUA bubble */
 
     const messages =
         document.querySelectorAll(
             ".chat-message"
         );
 
-
-    /* Pastikan awalnya tersembunyi */
 
     messages.forEach(
         function(message){
@@ -2079,25 +2412,15 @@ function mulaiUcapan(){
     );
 
 
-    /*
-       URUTAN:
-
-       Bubble 1 = 0,5 detik
-       Bubble 2 = 2 detik
-       Bubble 3 = 3,5 detik
-       Bubble 4 = 5 detik
-       Bubble 5 = 6,5 detik
-
-       Jarak masing-masing:
-       1,5 DETIK
-    */
-
     messages.forEach(
         function(message,index){
 
             const delay =
                 500 +
-                (index * 1500);
+                (
+                    index *
+                    1500
+                );
 
 
             const timer =
@@ -2132,7 +2455,9 @@ function resetBubbles(){
     bubbleTimers.forEach(
         function(timer){
 
-            clearTimeout(timer);
+            clearTimeout(
+                timer
+            );
 
         }
     );
@@ -2159,7 +2484,7 @@ function resetBubbles(){
 
 
 /* =====================================================
-   GALLERY OBSERVER
+   MEMORY OBSERVER
 ===================================================== */
 
 function setupMemoryObserver(){
@@ -2173,6 +2498,7 @@ function setupMemoryObserver(){
 
     memoryObserver =
         new IntersectionObserver(
+
             function(entries){
 
                 entries.forEach(
@@ -2216,7 +2542,7 @@ function setupMemoryObserver(){
 
 
 /* =====================================================
-   RESET GALLERY
+   RESET MEMORY
 ===================================================== */
 
 function resetMemory(){
@@ -2288,7 +2614,8 @@ function hujanBalonDanLove(){
                 balloon.style.fontSize =
                     (
                         25 +
-                        Math.random() * 30
+                        Math.random() *
+                        30
                     ) +
                     "px";
 
@@ -2296,7 +2623,8 @@ function hujanBalonDanLove(){
                 balloon.style.animationDuration =
                     (
                         3 +
-                        Math.random() * 2.5
+                        Math.random() *
+                        2.5
                     ) +
                     "s";
 
@@ -2326,12 +2654,14 @@ function hujanBalonDanLove(){
     /* LOVE */
 
     const loves = [
+
         "❤️",
         "💕",
         "💖",
         "💗",
         "💓",
         "💞"
+
     ];
 
 
@@ -2372,7 +2702,8 @@ function hujanBalonDanLove(){
                 love.style.fontSize =
                     (
                         18 +
-                        Math.random() * 25
+                        Math.random() *
+                        25
                     ) +
                     "px";
 
@@ -2380,7 +2711,8 @@ function hujanBalonDanLove(){
                 love.style.animationDuration =
                     (
                         2.5 +
-                        Math.random() * 2
+                        Math.random() *
+                        2
                     ) +
                     "s";
 
@@ -2410,11 +2742,13 @@ function hujanBalonDanLove(){
     /* CONFETTI */
 
     const confettiColors = [
+
         "#ff4d88",
         "#ffd166",
         "#06d6a0",
         "#4dabf7",
         "#c77dff"
+
     ];
 
 
@@ -2455,7 +2789,8 @@ function hujanBalonDanLove(){
                 confetti.style.animationDuration =
                     (
                         2 +
-                        Math.random() * 3
+                        Math.random() *
+                        3
                     ) +
                     "s";
 
@@ -2522,7 +2857,8 @@ function mulaiBalonTerbang(){
                 balloon.style.fontSize =
                     (
                         25 +
-                        Math.random() * 25
+                        Math.random() *
+                        25
                     ) +
                     "px";
 
@@ -2530,7 +2866,8 @@ function mulaiBalonTerbang(){
                 balloon.style.animationDuration =
                     (
                         5 +
-                        Math.random() * 4
+                        Math.random() *
+                        4
                     ) +
                     "s";
 
@@ -2569,12 +2906,14 @@ function mulaiHati(){
 
 
     const hearts = [
+
         "❤️",
         "💕",
         "💖",
         "💗",
         "💓",
         "💞"
+
     ];
 
 
@@ -2610,7 +2949,8 @@ function mulaiHati(){
                 heart.style.fontSize =
                     (
                         18 +
-                        Math.random() * 25
+                        Math.random() *
+                        25
                     ) +
                     "px";
 
@@ -2618,7 +2958,8 @@ function mulaiHati(){
                 heart.style.animationDuration =
                     (
                         4 +
-                        Math.random() * 3
+                        Math.random() *
+                        3
                     ) +
                     "s";
 
@@ -2667,6 +3008,7 @@ function toggleMusic(){
             "🎵";
 
     }
+
     else{
 
         audio.pause();
@@ -2755,8 +3097,6 @@ function tutupKartu(){
     audio.currentTime = 0;
 
 
-    /* MUSIC BUTTON */
-
     musicBtn.style.display =
         "none";
 
@@ -2775,9 +3115,11 @@ function tutupKartu(){
     );
 
 
-    balloonInterval = null;
+    balloonInterval =
+        null;
 
-    heartInterval = null;
+    heartInterval =
+        null;
 
 
     /* HAPUS EFFECT */
@@ -2799,20 +3141,25 @@ function tutupKartu(){
         );
 
 
-    /* RESET BUBBLE */
-
     resetBubbles();
-
-
-    /* RESET GALLERY */
 
     resetMemory();
 
 
-    /* HIDE CONTENT */
-
     content.style.display =
         "none";
+
+
+    /* RESET PPT */
+
+    if(
+        typeof window.resetPptPresentation ===
+        "function"
+    ){
+
+        window.resetPptPresentation();
+
+    }
 
 
     /* RESET INTRO */
@@ -2869,13 +3216,676 @@ function tutupKartu(){
 
 
     window.scrollTo({
+
         top:0,
+
         behavior:"instant"
+
     });
 
 }
 
 </script>
 
+
+<!-- =====================================================
+     PPT PRESENTATION
+===================================================== -->
+
+<script id="ppt-slide-mode-js">
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        document.body.classList.add(
+            "ppt-mode"
+        );
+
+        const main =
+            document.getElementById(
+                "content"
+            );
+
+        if(!main){
+            return;
+        }
+
+        /* =================================================
+           AMBIL SEMUA SECTION
+        ================================================= */
+
+        const slides =
+            Array.from(
+                main.children
+            ).filter(
+                function(el){
+
+                    return (
+                        el.tagName &&
+                        el.tagName.toLowerCase()
+                        === "section"
+                    );
+
+                }
+            );
+
+        if(!slides.length){
+            return;
+        }
+
+        let current = 0;
+        let presentationStarted = false;
+
+
+        /* =================================================
+           SIAPKAN SLIDE
+           Isi asli dibungkus, lalu footer ditaruh
+           SETELAH seluruh isi.
+        ================================================= */
+
+        slides.forEach(
+            function(slide,index){
+
+                slide.classList.add(
+                    "ppt-slide"
+                );
+
+                slide.dataset.slideIndex =
+                    index;
+
+
+                /* Bungkus semua isi asli */
+
+                const inner =
+                    document.createElement(
+                        "div"
+                    );
+
+                inner.className =
+                    "ppt-slide-inner";
+
+
+                while(
+                    slide.firstChild
+                ){
+
+                    inner.appendChild(
+                        slide.firstChild
+                    );
+
+                }
+
+
+                slide.appendChild(
+                    inner
+                );
+
+
+                /* =================================================
+                   FOOTER
+                   BUKAN FIXED
+                ================================================= */
+
+                const footer =
+                    document.createElement(
+                        "div"
+                    );
+
+                footer.className =
+                    "ppt-slide-footer";
+
+
+                footer.innerHTML = `
+
+                    <button
+                        type="button"
+                        class="ppt-prev"
+                    >
+                        ‹ Kembali
+                    </button>
+
+                    <span
+                        class="ppt-counter"
+                    >
+                        ${index + 1} / ${slides.length}
+                    </span>
+
+                    <button
+                        type="button"
+                        class="ppt-next"
+                    >
+                        Next ›
+                    </button>
+
+                `;
+
+
+                slide.appendChild(
+                    footer
+                );
+
+
+                /* Tombol masing-masing slide */
+
+                const prev =
+                    footer.querySelector(
+                        ".ppt-prev"
+                    );
+
+                const next =
+                    footer.querySelector(
+                        ".ppt-next"
+                    );
+
+
+                prev.addEventListener(
+                    "click",
+                    function(event){
+
+                        event.stopPropagation();
+
+                        if(
+                            current > 0
+                        ){
+
+                            showSlide(
+                                current - 1
+                            );
+
+                        }
+
+                    }
+                );
+
+
+                next.addEventListener(
+                    "click",
+                    function(event){
+
+                        event.stopPropagation();
+
+                        if(
+                            current <
+                            slides.length - 1
+                        ){
+
+                            showSlide(
+                                current + 1
+                            );
+
+                        }
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =================================================
+           UPDATE FOOTER
+        ================================================= */
+
+        function updateFooter(){
+
+            slides.forEach(
+                function(slide,index){
+
+                    const prev =
+                        slide.querySelector(
+                            ".ppt-prev"
+                        );
+
+                    const next =
+                        slide.querySelector(
+                            ".ppt-next"
+                        );
+
+                    const counter =
+                        slide.querySelector(
+                            ".ppt-counter"
+                        );
+
+
+                    if(prev){
+
+                        /* Tombol Kembali disembunyikan di slide pertama.
+                           Mulai slide kedua, tombol Kembali muncul. */
+                        prev.style.visibility =
+                            index === 0 ? "hidden" : "visible";
+
+                        prev.disabled =
+                            index === 0;
+
+                    }
+
+
+                    if(next){
+
+                        next.disabled =
+                            index ===
+                            slides.length - 1;
+
+                    }
+
+
+                    if(counter){
+
+                        counter.textContent =
+                            `${index + 1} / ${slides.length}`;
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        /* =================================================
+           SHOW SLIDE
+        ================================================= */
+
+        function showSlide(index){
+
+            if(
+                !presentationStarted
+            ){
+
+                return;
+
+            }
+
+
+            if(
+                index < 0 ||
+                index >= slides.length
+            ){
+
+                return;
+
+            }
+
+
+            current = index;
+
+
+            slides.forEach(
+                function(slide,i){
+
+                    const active =
+                        i === current;
+
+
+                    slide.classList.toggle(
+                        "ppt-active",
+                        active
+                    );
+
+
+                    if(active){
+
+                        /*
+                         * Setiap pindah slide,
+                         * kembali ke paling atas.
+                         *
+                         * Setelah itu user bisa scroll
+                         * normal sampai konten terakhir.
+                         */
+
+                        slide.scrollTop = 0;
+
+                    }
+
+                }
+            );
+
+
+            updateFooter();
+
+        }
+
+
+        /* =================================================
+           START
+        ================================================= */
+
+        function startPresentation(){
+
+            if(
+                presentationStarted
+            ){
+
+                return;
+
+            }
+
+
+            presentationStarted =
+                true;
+
+
+            const opening =
+                document.getElementById(
+                    "opening"
+                );
+
+            const birthdayIntro =
+                document.getElementById(
+                    "birthdayIntro"
+                );
+
+
+            if(opening){
+
+                opening.style.display =
+                    "none";
+
+            }
+
+
+            if(birthdayIntro){
+
+                birthdayIntro.classList.remove(
+                    "active",
+                    "finish"
+                );
+
+                birthdayIntro.style.display =
+                    "none";
+
+            }
+
+
+            main.style.display =
+                "block";
+
+
+            const musicBtn =
+                document.getElementById(
+                    "musicBtn"
+                );
+
+
+            if(musicBtn){
+
+                musicBtn.style.display =
+                    "flex";
+
+            }
+
+
+            current = 0;
+
+            showSlide(0);
+
+        }
+
+
+        /* =================================================
+           RESET
+        ================================================= */
+
+        function resetPptPresentation(){
+
+            presentationStarted =
+                false;
+
+            current = 0;
+
+
+            slides.forEach(
+                function(slide){
+
+                    slide.classList.remove(
+                        "ppt-active"
+                    );
+
+                    slide.scrollTop =
+                        0;
+
+                }
+            );
+
+
+            updateFooter();
+
+        }
+
+
+        window.startPptPresentation =
+            startPresentation;
+
+
+        window.resetPptPresentation =
+            resetPptPresentation;
+
+
+        /* =================================================
+           KEYBOARD
+           Panah hanya berpindah slide.
+           Scroll vertikal tetap normal memakai mouse/touch.
+        ================================================= */
+
+        document.addEventListener(
+            "keydown",
+            function(e){
+
+                if(
+                    !presentationStarted
+                ){
+
+                    return;
+
+                }
+
+
+                if(
+                    [
+                        "INPUT",
+                        "TEXTAREA",
+                        "SELECT"
+                    ].includes(
+                        e.target.tagName
+                    )
+                ){
+
+                    return;
+
+                }
+
+
+                if(
+                    e.key === "ArrowRight" ||
+                    e.key === "Enter"
+                ){
+
+                    e.preventDefault();
+
+
+                    if(
+                        current <
+                        slides.length - 1
+                    ){
+
+                        showSlide(
+                            current + 1
+                        );
+
+                    }
+
+                }
+
+
+                if(
+                    e.key === "ArrowLeft"
+                ){
+
+                    e.preventDefault();
+
+
+                    if(
+                        current > 0
+                    ){
+
+                        showSlide(
+                            current - 1
+                        );
+
+                    }
+
+                }
+
+                /*
+                 * SPACE sengaja tidak dipakai.
+                 * Jadi space tetap bisa digunakan untuk
+                 * scroll halaman/konten.
+                 */
+
+            }
+        );
+
+
+        /* =================================================
+           SWIPE
+           Hanya swipe horizontal.
+           Swipe vertikal tetap menjadi scroll biasa.
+        ================================================= */
+
+        let startX = null;
+        let startY = null;
+
+
+        document.addEventListener(
+            "touchstart",
+            function(e){
+
+                if(
+                    !presentationStarted
+                ){
+
+                    return;
+
+                }
+
+
+                const touch =
+                    e.changedTouches[0];
+
+
+                startX =
+                    touch.clientX;
+
+                startY =
+                    touch.clientY;
+
+            },
+            {
+                passive:true
+            }
+        );
+
+
+        document.addEventListener(
+            "touchend",
+            function(e){
+
+                if(
+                    !presentationStarted ||
+                    startX === null ||
+                    startY === null
+                ){
+
+                    return;
+
+                }
+
+
+                const touch =
+                    e.changedTouches[0];
+
+
+                const deltaX =
+                    touch.clientX - startX;
+
+                const deltaY =
+                    touch.clientY - startY;
+
+
+                startX = null;
+                startY = null;
+
+
+                /*
+                 * Kalau gerak vertikal lebih besar,
+                 * jangan pindah slide.
+                 * Biarkan user scroll.
+                 */
+
+                if(
+                    Math.abs(deltaY) >=
+                    Math.abs(deltaX)
+                ){
+
+                    return;
+
+                }
+
+
+                if(
+                    Math.abs(deltaX) < 70
+                ){
+
+                    return;
+
+                }
+
+
+                /* Swipe kiri = Next */
+
+                if(
+                    deltaX < 0 &&
+                    current <
+                    slides.length - 1
+                ){
+
+                    showSlide(
+                        current + 1
+                    );
+
+                }
+
+
+                /* Swipe kanan = Kembali */
+
+                else if(
+                    deltaX > 0 &&
+                    current > 0
+                ){
+
+                    showSlide(
+                        current - 1
+                    );
+
+                }
+
+            },
+            {
+                passive:true
+            }
+        );
+
+
+        /* Kondisi awal */
+        updateFooter();
+
+    }
+);
+
+</script>
+
+
 </body>
+
 </html>
