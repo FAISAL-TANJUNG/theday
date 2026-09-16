@@ -396,6 +396,47 @@ body{
     visibility:hidden;
 }
 
+.opening-wrap{
+    width:min(1000px,96vw);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:clamp(12px,3vw,35px);
+}
+
+.opening-side-photo{
+    width:clamp(150px,22vw,280px);
+    height:clamp(190px,30vw,350px);
+    object-fit:cover;
+    border-radius:22px;
+    padding:6px;
+    background:rgba(255,255,255,.8);
+    border:2px solid rgba(198,75,120,.25);
+    box-shadow:0 15px 35px rgba(130,45,80,.18);
+    animation:photoFloat 3s ease-in-out infinite;
+}
+
+.opening-side-photo.right{
+    animation-delay:1.2s;
+}
+
+@keyframes photoFloat{
+    0%,100%{transform:translateY(0) rotate(-3deg);}
+    50%{transform:translateY(-10px) rotate(3deg);}
+}
+
+@media(max-width:600px){
+    .opening-wrap{
+        gap:8px;
+    }
+    .opening-side-photo{
+        width:82px;
+        height:105px;
+        border-radius:16px;
+        padding:4px;
+    }
+}
+
 .opening-card{
     width:min(430px,92vw);
 
@@ -2074,27 +2115,44 @@ body{
     class="opening"
     id="opening">
 
-    <div class="opening-card">
+    <div class="opening-wrap">
 
-        <div class="envelope">
-            💌
+        <!-- KARTU 1 - FOTO KIRI -->
+        <img
+            class="opening-side-photo left"
+            src="images/kartu1.png"
+            alt="Kartu 1">
+
+        <!-- KARTU UTAMA -->
+        <div class="opening-card">
+
+            <div class="envelope">
+                💌
+            </div>
+
+            <h1>
+                Ada Kartu Untukmu
+            </h1>
+
+            <p>
+                Sebuah ucapan spesial menunggumu ❤️
+            </p>
+
+            <button
+                class="open-btn"
+                id="openButton">
+
+                💖 Buka Kartu
+
+            </button>
+
         </div>
 
-        <h1>
-            Ada Kartu Untukmu
-        </h1>
-
-        <p>
-            Sebuah ucapan spesial menunggumu ❤️
-        </p>
-
-        <button
-            class="open-btn"
-            id="openButton">
-
-            💖 Buka Kartu
-
-        </button>
+        <!-- KARTU 2 - FOTO KANAN -->
+        <img
+            class="opening-side-photo right"
+            src="images/kartu2.png"
+            alt="Kartu 2">
 
     </div>
 
@@ -2167,7 +2225,7 @@ body{
     <section class="section">
 
         <h2 class="section-title">
-            💌 Pesan Untukmu
+            💌 Pesan Untuk Mami
         </h2>
 
 
@@ -2180,13 +2238,13 @@ body{
 
                 <img
                     class="chat-profile"
-                    src="images/foto1.jpg"
+                    src="images/profil.png"
                     alt="Foto profil Dede">
 
                 <div class="chat-content">
 
                     <div class="chat-name">
-                        Dede
+                        Dede Seng
                     </div>
 
                     <div class="chat-bubble">
@@ -2206,18 +2264,18 @@ body{
 
                 <img
                     class="chat-profile"
-                    src="images/foto1.jpg"
+                    src="images/profil.png"
                     alt="Foto profil Dede">
 
                 <div class="chat-content">
 
                     <div class="chat-name">
-                        Dede
+                        Dede Seng
                     </div>
 
                     <div class="chat-bubble">
 
-                        🌷 Mami, semoga selalu diberikan banyak alasan untuk bahagia, banyak momen untuk tersenyum, dan banyak orang yang tulus menyayangi Mami.
+                        🌷 Semoga selalu diberikan banyak alasan untuk bahagia, banyak momen untuk tersenyum, dan banyak orang yang tulus menyayangi Mami.
 
                     </div>
 
@@ -2232,18 +2290,18 @@ body{
 
                 <img
                     class="chat-profile"
-                    src="images/foto1.jpg"
+                    src="images/profil.png"
                     alt="Foto profil Dede">
 
                 <div class="chat-content">
 
                     <div class="chat-name">
-                        Dede
+                        Dede Seng
                     </div>
 
                     <div class="chat-bubble">
 
-                        ❤️ Semoga segala lelah yang pernah Mami rasakan digantikan dengan hari-hari yang lebih tenang dan penuh kebahagiaan.
+                        ❤️ Semoga segala lelah yang pernah di rasakan digantikan dengan hari-hari yang lebih tenang dan penuh kebahagiaan.
 
                     </div>
 
@@ -2258,13 +2316,13 @@ body{
 
                 <img
                     class="chat-profile"
-                    src="images/foto1.jpg"
+                    src="images/profil.png"
                     alt="Foto profil Dede">
 
                 <div class="chat-content">
 
                     <div class="chat-name">
-                        Dede
+                        Dede Seng
                     </div>
 
                     <div class="chat-bubble">
@@ -2284,13 +2342,13 @@ body{
 
                 <img
                     class="chat-profile"
-                    src="images/foto1.jpg"
+                    src="images/profil.png"
                     alt="Foto profil Dede">
 
                 <div class="chat-content">
 
                     <div class="chat-name">
-                        Dede
+                        Dede Seng
                     </div>
 
                     <div class="chat-bubble">
@@ -2310,13 +2368,13 @@ body{
 
                 <img
                     class="chat-profile"
-                    src="images/foto1.jpg"
+                    src="images/profil.png"
                     alt="Foto profil Dede">
 
                 <div class="chat-content">
 
                     <div class="chat-name">
-                        Dede
+                        Dede Seng
                     </div>
 
                     <div class="chat-bubble">
@@ -3461,6 +3519,5 @@ function tutupKartu(){
 }
 
 </script>
-
 </body>
 </html>
