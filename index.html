@@ -1,0 +1,302 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Selamat Ulang Tahun 🎂</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: "Poppins", Arial, sans-serif;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 90%;
+            max-width: 500px;
+            padding: 40px 25px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+            color: white;
+            z-index: 2;
+        }
+
+        .cake {
+            font-size: 75px;
+            animation: bounce 2s infinite;
+        }
+
+        h1 {
+            margin-top: 15px;
+            font-size: 35px;
+        }
+
+        .nama {
+            margin-top: 10px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff8a8;
+        }
+
+        .subtitle {
+            margin-top: 15px;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 13px 28px;
+            border: none;
+            border-radius: 50px;
+            background: white;
+            color: #ff5c8a;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        button:hover {
+            transform: scale(1.08);
+            background: #fff3f6;
+        }
+
+        .ucapan {
+            display: none;
+            margin-top: 25px;
+            padding: 20px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 18px;
+            line-height: 1.8;
+            animation: muncul 0.8s ease;
+        }
+
+        .ucapan.show {
+            display: block;
+        }
+
+        .heart {
+            position: absolute;
+            bottom: -50px;
+            font-size: 25px;
+            animation: naik 7s linear infinite;
+            opacity: 0.8;
+        }
+
+        .heart:nth-child(1) {
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .heart:nth-child(2) {
+            left: 25%;
+            animation-delay: 2s;
+        }
+
+        .heart:nth-child(3) {
+            left: 45%;
+            animation-delay: 4s;
+        }
+
+        .heart:nth-child(4) {
+            left: 70%;
+            animation-delay: 1s;
+        }
+
+        .heart:nth-child(5) {
+            left: 85%;
+            animation-delay: 3s;
+        }
+
+        @keyframes naik {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-110vh) scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+
+        @keyframes muncul {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 13px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Animasi hati -->
+    <div class="heart">❤️</div>
+    <div class="heart">💖</div>
+    <div class="heart">💕</div>
+    <div class="heart">💗</div>
+    <div class="heart">💓</div>
+
+    <div class="container">
+
+        <div class="cake">🎂</div>
+
+        <h1>Selamat Ulang Tahun! 🎉</h1>
+
+        <!-- GANTI NAMA DI SINI -->
+        <div class="nama">Nama Kamu ❤️</div>
+
+        <p class="subtitle">
+            Hari ini adalah hari spesial untuk seseorang yang juga spesial.
+            Semoga hari ulang tahunmu dipenuhi kebahagiaan,
+            senyuman, dan orang-orang yang menyayangimu.
+        </p>
+
+        <button onclick="bukaUcapan()">
+            💌 Buka Ucapan
+        </button>
+
+        <div class="ucapan" id="ucapan">
+
+            <h2>🎈 Happy Birthday! 🎈</h2>
+
+            <p>
+                Semoga di usia yang baru ini,
+                semua impian dan harapanmu perlahan menjadi kenyataan.
+            </p>
+
+            <p>
+                Semoga selalu diberikan kesehatan,
+                kebahagiaan, kesuksesan,
+                dan banyak hal baik dalam setiap langkahmu.
+            </p>
+
+            <p>
+                Jangan pernah berhenti menjadi versi terbaik dari dirimu.
+                Tetap tersenyum, tetap semangat,
+                dan nikmati setiap perjalanan hidupmu. ❤️
+            </p>
+
+            <p>
+                <strong>Selamat ulang tahun! 🎂🎉❤️</strong>
+            </p>
+
+        </div>
+
+        <div class="footer">
+            Dibuat dengan ❤️ khusus untukmu
+        </div>
+
+    </div>
+
+    <script>
+        function bukaUcapan() {
+            const ucapan = document.getElementById("ucapan");
+
+            ucapan.classList.toggle("show");
+
+            if (ucapan.classList.contains("show")) {
+                buatKonfeti();
+            }
+        }
+
+        function buatKonfeti() {
+
+            const emoji = ["🎉", "🎊", "❤️", "💖", "✨", "🎈", "🥳"];
+
+            for (let i = 0; i < 40; i++) {
+
+                const konfeti = document.createElement("div");
+
+                konfeti.innerHTML =
+                    emoji[Math.floor(Math.random() * emoji.length)];
+
+                konfeti.style.position = "fixed";
+                konfeti.style.left = Math.random() * 100 + "vw";
+                konfeti.style.top = "-30px";
+                konfeti.style.fontSize =
+                    Math.random() * 20 + 15 + "px";
+                konfeti.style.zIndex = "9999";
+                konfeti.style.pointerEvents = "none";
+
+                const durasi = Math.random() * 3 + 2;
+
+                konfeti.style.animation =
+                    `jatuh ${durasi}s linear forwards`;
+
+                document.body.appendChild(konfeti);
+
+                setTimeout(() => {
+                    konfeti.remove();
+                }, durasi * 1000);
+            }
+        }
+
+        const style = document.createElement("style");
+
+        style.innerHTML = `
+            @keyframes jatuh {
+                from {
+                    transform: translateY(0) rotate(0deg);
+                    opacity: 1;
+                }
+
+                to {
+                    transform: translateY(110vh) rotate(720deg);
+                    opacity: 0;
+                }
+            }
+        `;
+
+        document.head.appendChild(style);
+    </script>
+
+</body>
+</html>
+```
