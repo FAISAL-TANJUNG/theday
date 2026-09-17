@@ -1019,18 +1019,19 @@ body{
 
 /* =====================================================
    PANTUN PENUTUP
+   BACKGROUND KHUSUS PANTUN
 ===================================================== */
 
 .pantun-penutup{
     background:
         radial-gradient(
-            circle at 85% 20%,
-            rgba(255,255,255,.95),
+            circle at 85% 15%,
+            rgba(255,255,255,.98),
             transparent 32%
         ),
         radial-gradient(
-            circle at 15% 80%,
-            rgba(255,218,177,.7),
+            circle at 15% 85%,
+            rgba(255,218,177,.75),
             transparent 35%
         ),
         linear-gradient(
@@ -1039,6 +1040,8 @@ body{
             #fff9ef,
             #ffe4cf
         );
+
+    padding-bottom:75px;
 }
 
 .pantun-penutup .pantun-photo{
@@ -1053,35 +1056,126 @@ body{
 
 
 /* =====================================================
-   3 FOTO DI BAWAH PANTUN PENUTUP
+   DOKUMENTASI 3 FOTO
+   BACKGROUND TERPISAH DARI PANTUN
 ===================================================== */
 
 .penutup-photos{
+    width:100%;
+
+    margin:0;
+
+    padding:
+        70px max(5vw,25px)
+        80px;
+
+    background:
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(255,255,255,.98),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 85%,
+            rgba(255,199,220,.7),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #ffe8f1,
+            #fff8fb,
+            #ffdce9
+        );
+
+    border-top:
+        4px solid
+        rgba(198,75,120,.10);
+
+    border-bottom:
+        1px solid
+        rgba(198,75,120,.10);
+
+    position:relative;
+    z-index:2;
+}
+
+
+/* JUDUL DOKUMENTASI */
+
+.dokumentasi-title{
+    text-align:center;
+
+    color:#a52f5b;
+
+    font-size:
+        clamp(28px,4vw,38px);
+
+    font-weight:800;
+
+    margin-bottom:45px;
+
+    position:relative;
+    z-index:2;
+
+    text-shadow:
+        0 3px 8px
+        rgba(165,47,91,.12);
+}
+
+.dokumentasi-title::after{
+    content:"";
+
+    display:block;
+
+    width:80px;
+    height:3px;
+
+    margin:14px auto 0;
+
+    border-radius:10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #c64b78,
+            transparent
+        );
+}
+
+
+/* GRID 3 FOTO */
+
+.penutup-photos-grid{
     width:min(1100px,94vw);
 
-    margin:55px auto 0;
+    margin:0 auto;
 
     display:grid;
 
     grid-template-columns:
-        repeat(3,1fr);
+        repeat(3,minmax(0,1fr));
 
     gap:25px;
 
     position:relative;
-
     z-index:2;
 }
 
+
+/* FOTO */
+
 .penutup-photo{
     width:100%;
+
     height:380px;
 
     object-fit:cover;
 
     padding:6px;
 
-    background:rgba(255,255,255,.9);
+    background:
+        rgba(255,255,255,.95);
 
     border:
         2px solid
@@ -2058,20 +2152,33 @@ body{
 
 
     /* =================================================
-       3 FOTO PENUTUP MOBILE
+       DOKUMENTASI MOBILE
     ================================================= */
 
     .penutup-photos{
-        width:88vw;
+        width:100%;
+
+        padding:
+            50px 20px 60px;
+    }
+
+    .dokumentasi-title{
+        font-size:28px;
+
+        margin-bottom:35px;
+    }
+
+    .penutup-photos-grid{
+        width:100%;
 
         grid-template-columns:1fr;
 
         gap:25px;
-
-        margin-top:40px;
     }
 
     .penutup-photo{
+        width:100%;
+
         height:360px;
     }
 
@@ -2678,27 +2785,36 @@ body{
 
         </div>
 
+    </div>
 
-        <!-- =================================================
-             3 FOTO DI BAWAH PANTUN PENUTUP
-        ================================================= -->
 
-        <div class="penutup-photos">
+    <!-- =================================================
+         DOKUMENTASI
+         BACKGROUND TERPISAH
+    ================================================= -->
+
+    <div class="penutup-photos">
+
+        <h2 class="dokumentasi-title">
+            📸 Dokumentasi
+        </h2>
+
+        <div class="penutup-photos-grid">
 
             <img
                 class="penutup-photo"
                 src="images/h1.png"
-                alt="Foto Mami Rose 1">
+                alt="Dokumentasi Mami Rose 1">
 
             <img
                 class="penutup-photo"
                 src="images/h2.png"
-                alt="Foto Mami Rose 2">
+                alt="Dokumentasi Mami Rose 2">
 
             <img
                 class="penutup-photo"
                 src="images/h3.png"
-                alt="Foto Mami Rose 3">
+                alt="Dokumentasi Mami Rose 3">
 
         </div>
 
