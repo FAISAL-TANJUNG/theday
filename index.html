@@ -2589,6 +2589,87 @@ body{
 
 }
 
+
+
+/* ===== VIDEO: SATU BINGKAI PINK + BALON ===== */
+.birthday-video{
+    position:relative !important;
+    width:min(1200px,96vw) !important;
+    margin:35px auto 45px !important;
+    padding:14px !important;
+    box-sizing:border-box !important;
+    border:3px solid #f28bb5 !important;
+    border-radius:30px !important;
+    overflow:visible !important;
+    line-height:0 !important;
+    background:
+        radial-gradient(circle at 15% 20%,rgba(255,255,255,.95),transparent 32%),
+        radial-gradient(circle at 85% 80%,rgba(255,215,235,.85),transparent 38%),
+        linear-gradient(135deg,#ffd6e8,#fff0f7,#f8c8df) !important;
+    box-shadow:0 12px 30px rgba(230,90,145,.18) !important;
+}
+
+.birthday-video::before,
+.birthday-video::after{
+    position:absolute !important;
+    z-index:5 !important;
+    font-size:42px !important;
+    line-height:1 !important;
+    pointer-events:none !important;
+    filter:drop-shadow(0 5px 5px rgba(200,70,120,.18));
+}
+
+.birthday-video::before{
+    content:"🎈🎈" !important;
+    top:-28px !important;
+    left:22px !important;
+}
+
+.birthday-video::after{
+    content:"🎈🎈" !important;
+    top:-28px !important;
+    right:22px !important;
+}
+
+.birthday-video video{
+    display:block !important;
+    width:100% !important;
+    height:auto !important;
+    max-width:none !important;
+    margin:0 !important;
+    padding:0 !important;
+    box-sizing:border-box !important;
+    object-fit:contain !important;
+    border:0 !important;
+    border-radius:18px !important;
+}
+
+@media(max-width:600px){
+    .birthday-video{
+        width:94vw !important;
+        margin-top:28px !important;
+        margin-bottom:35px !important;
+        padding:10px !important;
+        border-width:2px !important;
+        border-radius:24px !important;
+    }
+
+    .birthday-video::before,
+    .birthday-video::after{
+        font-size:30px !important;
+        top:-21px !important;
+    }
+
+    .birthday-video::before{ left:12px !important; }
+    .birthday-video::after{ right:12px !important; }
+
+    .birthday-video video{
+        padding:0 !important;
+        border:0 !important;
+        border-radius:16px !important;
+    }
+}
+
 </style>
 </head>
 
