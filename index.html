@@ -291,47 +291,6 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:clamp(12px,3vw,35px);
-}
-
-.opening-side-photo{
-    width:clamp(150px,22vw,280px);
-    height:clamp(190px,30vw,350px);
-    object-fit:cover;
-    border-radius:22px;
-    padding:6px;
-    background:rgba(255,255,255,.8);
-    border:2px solid rgba(198,75,120,.25);
-    box-shadow:0 15px 35px rgba(130,45,80,.18);
-    animation:photoFloat 3s ease-in-out infinite;
-}
-
-.opening-side-photo.right{
-    animation-delay:1.2s;
-}
-
-@keyframes photoFloat{
-    0%,100%{
-        transform:translateY(0) rotate(-3deg);
-    }
-
-    50%{
-        transform:translateY(-10px) rotate(3deg);
-    }
-}
-
-@media(max-width:600px){
-
-    .opening-wrap{
-        gap:8px;
-    }
-
-    .opening-side-photo{
-        width:82px;
-        height:105px;
-        border-radius:16px;
-        padding:4px;
-    }
 }
 
 .opening-card{
@@ -864,20 +823,17 @@ body{
 
 
 /* =====================================================
-   3 FOTO HERO - 1 BARIS
+   1 FOTO HERO
 ===================================================== */
 
 .hero-photos{
-    width:min(1000px,92vw);
+    width:min(500px,90vw);
 
     margin:28px auto 0;
 
-    display:grid;
+    display:flex;
 
-    grid-template-columns:
-        repeat(3,1fr);
-
-    gap:18px;
+    justify-content:center;
 
     position:relative;
     z-index:2;
@@ -887,7 +843,7 @@ body{
     display:block;
 
     width:100%;
-    height:400px;
+    height:500px;
 
     object-fit:cover;
 
@@ -921,11 +877,12 @@ body{
 
 
 /* =====================================================
-   PANTUN PEMBUKAAN
+   PANTUN PEMBUKAAN & PENUTUP
 ===================================================== */
 
 .pantun-section{
     width:100%;
+
     padding:70px max(5vw,25px);
 
     position:relative;
@@ -1060,6 +1017,41 @@ body{
 
 .pantun-text span{
     display:block;
+}
+
+
+/* =====================================================
+   PANTUN PENUTUP
+===================================================== */
+
+.pantun-penutup{
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(255,255,255,.95),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 15% 80%,
+            rgba(255,218,177,.7),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #fff0df,
+            #fff9ef,
+            #ffe4cf
+        );
+}
+
+.pantun-penutup .pantun-photo{
+    transform:rotate(3deg);
+}
+
+.pantun-penutup .pantun-photo:hover{
+    transform:
+        rotate(0deg)
+        scale(1.03);
 }
 
 
@@ -1415,41 +1407,6 @@ body{
 
 .memory-item:hover img{
     transform:scale(1.02);
-}
-
-
-/* =====================================================
-   PANTUN PENUTUP
-===================================================== */
-
-.pantun-penutup{
-    background:
-        radial-gradient(
-            circle at 85% 20%,
-            rgba(255,255,255,.95),
-            transparent 32%
-        ),
-        radial-gradient(
-            circle at 15% 80%,
-            rgba(255,218,177,.7),
-            transparent 35%
-        ),
-        linear-gradient(
-            135deg,
-            #fff0df,
-            #fff9ef,
-            #ffe4cf
-        );
-}
-
-.pantun-penutup .pantun-photo{
-    transform:rotate(3deg);
-}
-
-.pantun-penutup .pantun-photo:hover{
-    transform:
-        rotate(0deg)
-        scale(1.03);
 }
 
 
@@ -1871,18 +1828,18 @@ body{
     }
 
 
-    /* 3 FOTO TETAP 1 BARIS DI HP */
+    /* 1 FOTO HERO */
 
     .hero-photos{
-        width:92vw;
-        gap:8px;
+        width:88vw;
         margin-top:22px;
     }
 
     .hero-photos img{
-        height:150px;
+        width:100%;
+        height:360px;
         padding:4px;
-        border-radius:16px;
+        border-radius:20px;
     }
 
 
@@ -2109,11 +2066,6 @@ body{
 
     <div class="opening-wrap">
 
-        <img
-            class="opening-side-photo left"
-            src="images/kartu1.png"
-            alt="Kartu 1">
-
         <div class="opening-card">
 
             <div class="envelope">
@@ -2137,11 +2089,6 @@ body{
             </button>
 
         </div>
-
-        <img
-            class="opening-side-photo right"
-            src="images/kartu2.png"
-            alt="Kartu 2">
 
     </div>
 
@@ -2205,21 +2152,13 @@ body{
         </p>
 
 
-        <!-- 3 FOTO DALAM 1 BARIS -->
+        <!-- 1 FOTO SAJA -->
 
         <div class="hero-photos">
 
             <img
-                src="images/mami.png"
-                alt="Foto Mami Rose 1">
-
-            <img
                 src="images/mami2.png"
-                alt="Foto Mami Rose 2">
-
-            <img
-                src="images/mami1.png"
-                alt="Foto Mami Rose 3">
+                alt="Foto Mami Rose">
 
         </div>
 
@@ -2230,19 +2169,15 @@ body{
          PANTUN PEMBUKAAN
     ================================================= -->
 
-    <section class="pantun-section">
+    <div class="pantun-section">
 
         <div class="pantun-container">
-
-            <!-- FOTO KIRI -->
 
             <img
                 class="pantun-photo"
                 src="images/kartu1.png"
                 alt="Kartu Pantun Pembukaan">
 
-
-            <!-- TEKS KANAN -->
 
             <div class="pantun-content">
 
@@ -2274,7 +2209,7 @@ body{
 
         </div>
 
-    </section>
+    </div>
 
 
     <!-- =================================================
@@ -2482,19 +2417,15 @@ body{
          PANTUN PENUTUP
     ================================================= -->
 
-    <section class="pantun-section pantun-penutup">
+    <div class="pantun-section pantun-penutup">
 
         <div class="pantun-container">
-
-            <!-- FOTO KIRI -->
 
             <img
                 class="pantun-photo"
                 src="images/kartu2.png"
                 alt="Kartu Pantun Penutup">
 
-
-            <!-- TEKS KANAN -->
 
             <div class="pantun-content">
 
@@ -2526,7 +2457,7 @@ body{
 
         </div>
 
-    </section>
+    </div>
 
 
     <!-- =================================================
@@ -3010,7 +2941,6 @@ function resetMemory(){
 
 function hujanBalonDanLove(){
 
-
     for(
         let i=0;
         i<35;
@@ -3025,20 +2955,16 @@ function hujanBalonDanLove(){
                         "div"
                     );
 
-
                 balloon.className =
                     "rain-balloon";
 
-
                 balloon.textContent =
                     "🎈";
-
 
                 balloon.style.left =
                     Math.random() *
                     100 +
                     "%";
-
 
                 balloon.style.fontSize =
                     (
@@ -3047,7 +2973,6 @@ function hujanBalonDanLove(){
                     ) +
                     "px";
 
-
                 balloon.style.animationDuration =
                     (
                         3 +
@@ -3055,11 +2980,9 @@ function hujanBalonDanLove(){
                     ) +
                     "s";
 
-
                 document.body.appendChild(
                     balloon
                 );
-
 
                 setTimeout(
                     function(){
@@ -3069,7 +2992,6 @@ function hujanBalonDanLove(){
                     },
                     6000
                 );
-
 
             },
             i * 100
@@ -3102,10 +3024,8 @@ function hujanBalonDanLove(){
                         "div"
                     );
 
-
                 love.className =
                     "rain-love";
-
 
                 love.textContent =
                     loves[
@@ -3115,12 +3035,10 @@ function hujanBalonDanLove(){
                         )
                     ];
 
-
                 love.style.left =
                     Math.random() *
                     100 +
                     "%";
-
 
                 love.style.fontSize =
                     (
@@ -3129,7 +3047,6 @@ function hujanBalonDanLove(){
                     ) +
                     "px";
 
-
                 love.style.animationDuration =
                     (
                         2.5 +
@@ -3137,11 +3054,9 @@ function hujanBalonDanLove(){
                     ) +
                     "s";
 
-
                 document.body.appendChild(
                     love
                 );
-
 
                 setTimeout(
                     function(){
@@ -3151,7 +3066,6 @@ function hujanBalonDanLove(){
                     },
                     5000
                 );
-
 
             },
             i * 80
@@ -3183,10 +3097,8 @@ function hujanBalonDanLove(){
                         "div"
                     );
 
-
                 confetti.className =
                     "confetti";
-
 
                 confetti.style.background =
                     confettiColors[
@@ -3196,12 +3108,10 @@ function hujanBalonDanLove(){
                         )
                     ];
 
-
                 confetti.style.left =
                     Math.random() *
                     100 +
                     "%";
-
 
                 confetti.style.animationDuration =
                     (
@@ -3210,11 +3120,9 @@ function hujanBalonDanLove(){
                     ) +
                     "s";
 
-
                 document.body.appendChild(
                     confetti
                 );
-
 
                 setTimeout(
                     function(){
@@ -3224,7 +3132,6 @@ function hujanBalonDanLove(){
                     },
                     6000
                 );
-
 
             },
             i * 30
@@ -3255,20 +3162,16 @@ function mulaiBalonTerbang(){
                         "div"
                     );
 
-
                 balloon.className =
                     "floating-balloon";
 
-
                 balloon.textContent =
                     "🎈";
-
 
                 balloon.style.left =
                     Math.random() *
                     100 +
                     "%";
-
 
                 balloon.style.fontSize =
                     (
@@ -3277,7 +3180,6 @@ function mulaiBalonTerbang(){
                     ) +
                     "px";
 
-
                 balloon.style.animationDuration =
                     (
                         5 +
@@ -3285,11 +3187,9 @@ function mulaiBalonTerbang(){
                     ) +
                     "s";
 
-
                 document.body.appendChild(
                     balloon
                 );
-
 
                 setTimeout(
                     function(){
@@ -3299,7 +3199,6 @@ function mulaiBalonTerbang(){
                     },
                     10000
                 );
-
 
             },
             1800
@@ -3338,10 +3237,8 @@ function mulaiHati(){
                         "div"
                     );
 
-
                 heart.className =
                     "floating-heart";
-
 
                 heart.textContent =
                     hearts[
@@ -3351,12 +3248,10 @@ function mulaiHati(){
                         )
                     ];
 
-
                 heart.style.left =
                     Math.random() *
                     100 +
                     "%";
-
 
                 heart.style.fontSize =
                     (
@@ -3365,7 +3260,6 @@ function mulaiHati(){
                     ) +
                     "px";
 
-
                 heart.style.animationDuration =
                     (
                         4 +
@@ -3373,11 +3267,9 @@ function mulaiHati(){
                     ) +
                     "s";
 
-
                 document.body.appendChild(
                     heart
                 );
-
 
                 setTimeout(
                     function(){
@@ -3387,7 +3279,6 @@ function mulaiHati(){
                     },
                     9000
                 );
-
 
             },
             900
