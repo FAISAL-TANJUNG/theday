@@ -2523,6 +2523,70 @@ body{
         right:25px;
     }
 
+
+
+    /* =================================================
+       PANTUN RESPONSIF HP
+       HP: FOTO DI ATAS, PANTUN DI BAWAH
+    ================================================= */
+    .pantun-section{
+        width:100%;
+        padding:45px 14px 55px;
+        box-sizing:border-box;
+    }
+
+    .pantun-container{
+        width:100%;
+        max-width:520px;
+        margin:0 auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        gap:24px;
+        box-sizing:border-box;
+    }
+
+    .pantun-photo,
+    .pantun-penutup .pantun-photo{
+        width:min(88vw,330px);
+        height:auto;
+        max-height:none;
+        flex:none;
+        display:block;
+        margin:0 auto;
+        object-fit:contain;
+        transform:rotate(-3deg);
+        box-sizing:border-box;
+    }
+
+    .pantun-penutup .pantun-photo{
+        transform:rotate(3deg);
+    }
+
+    .pantun-content{
+        width:100%;
+        max-width:520px;
+        flex:none;
+        text-align:center;
+        padding:20px 18px;
+        box-sizing:border-box;
+    }
+
+    .pantun-title{
+        font-size:24px;
+        line-height:1.3;
+        margin-bottom:14px;
+        text-align:center;
+    }
+
+    .pantun-text{
+        font-size:16px;
+        line-height:1.8;
+        text-align:center;
+        overflow-wrap:anywhere;
+    }
+
 }
 
 </style>
