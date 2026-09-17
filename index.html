@@ -458,9 +458,6 @@ body{
         translateY(40px);
 }
 
-
-/* HAPPY */
-
 .intro-happy.show{
     animation:
         introHappy
@@ -498,9 +495,6 @@ body{
     }
 }
 
-
-/* BIRTHDAY */
-
 .intro-birthday.show{
     animation:
         introBirthday
@@ -537,9 +531,6 @@ body{
             translateY(-20px);
     }
 }
-
-
-/* MAMI ROSE */
 
 .intro-mami.show{
     animation:
@@ -581,9 +572,6 @@ body{
     }
 }
 
-
-/* SPARKLE */
-
 .birthday-intro::before{
     content:"✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨";
 
@@ -623,9 +611,6 @@ body{
             rotate(5deg);
     }
 }
-
-
-/* INTRO FINISH */
 
 .birthday-intro.finish{
     animation:
@@ -820,13 +805,13 @@ body{
 
 
 /* =====================================================
-   1 FOTO HERO
+   1 FOTO HERO - BINGKAI ULANG TAHUN
 ===================================================== */
 
 .hero-photos{
     width:min(500px,90vw);
 
-    margin:28px auto 0;
+    margin:35px auto 0;
 
     display:flex;
 
@@ -834,7 +819,88 @@ body{
 
     position:relative;
     z-index:2;
+
+    padding:18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #fff5fa,
+            #ffe4ef
+        );
+
+    border:
+        3px solid
+        #c64b78;
+
+    border-radius:30px;
+
+    box-shadow:
+        0 18px 45px
+        rgba(100,30,60,.22),
+        inset 0 0 0 5px rgba(255,255,255,.9),
+        inset 0 0 0 8px rgba(198,75,120,.12);
+
+    isolation:isolate;
+
+    animation:
+        birthdayFrameGlow
+        3s
+        ease-in-out
+        infinite;
 }
+
+
+/* DEKORASI ATAS KIRI */
+
+.hero-photos::before{
+    content:"🎈  ✨";
+
+    position:absolute;
+
+    top:-25px;
+    left:-20px;
+
+    font-size:32px;
+
+    z-index:3;
+
+    transform:rotate(-12deg);
+
+    filter:
+        drop-shadow(
+            0 4px 5px
+            rgba(100,30,60,.15)
+        );
+}
+
+
+/* DEKORASI BAWAH KANAN */
+
+.hero-photos::after{
+    content:"✨  🎂";
+
+    position:absolute;
+
+    right:-20px;
+    bottom:-22px;
+
+    font-size:32px;
+
+    z-index:3;
+
+    transform:rotate(10deg);
+
+    filter:
+        drop-shadow(
+            0 4px 5px
+            rgba(100,30,60,.15)
+        );
+}
+
+
+/* FOTO */
 
 .hero-photos img{
     display:block;
@@ -844,20 +910,20 @@ body{
 
     object-fit:cover;
 
-    padding:6px;
+    padding:7px;
 
-    border-radius:24px;
-
-    background:
-        rgba(255,255,255,.85);
+    background:#fff;
 
     border:
-        2px solid
-        rgba(198,75,120,.22);
+        3px solid
+        #f3b3c9;
+
+    border-radius:22px;
 
     box-shadow:
-        0 15px 35px
-        rgba(100,30,60,.18);
+        0 10px 25px
+        rgba(100,30,60,.18),
+        inset 0 0 0 3px #fff7fa;
 
     transition:
         transform .35s ease,
@@ -865,11 +931,33 @@ body{
 }
 
 .hero-photos img:hover{
-    transform:scale(1.03);
+    transform:scale(1.025);
 
     box-shadow:
-        0 20px 45px
-        rgba(100,30,60,.24);
+        0 18px 40px
+        rgba(100,30,60,.28);
+}
+
+
+/* ANIMASI GLOW BINGKAI */
+
+@keyframes birthdayFrameGlow{
+
+    0%,100%{
+        box-shadow:
+            0 18px 45px
+            rgba(100,30,60,.22),
+            inset 0 0 0 5px rgba(255,255,255,.9),
+            inset 0 0 0 8px rgba(198,75,120,.12);
+    }
+
+    50%{
+        box-shadow:
+            0 20px 55px
+            rgba(198,75,120,.28),
+            inset 0 0 0 5px rgba(255,255,255,.95),
+            inset 0 0 0 8px rgba(198,75,120,.18);
+    }
 }
 
 
@@ -1019,7 +1107,6 @@ body{
 
 /* =====================================================
    PANTUN PENUTUP
-   BACKGROUND KHUSUS PANTUN
 ===================================================== */
 
 .pantun-penutup{
@@ -1057,7 +1144,6 @@ body{
 
 /* =====================================================
    DOKUMENTASI 3 FOTO
-   BACKGROUND TERPISAH DARI PANTUN
 ===================================================== */
 
 .penutup-photos{
@@ -1098,9 +1184,6 @@ body{
     position:relative;
     z-index:2;
 }
-
-
-/* JUDUL DOKUMENTASI */
 
 .dokumentasi-title{
     text-align:center;
@@ -1143,9 +1226,6 @@ body{
         );
 }
 
-
-/* GRID 3 FOTO */
-
 .penutup-photos-grid{
     width:min(1100px,94vw);
 
@@ -1161,9 +1241,6 @@ body{
     position:relative;
     z-index:2;
 }
-
-
-/* FOTO */
 
 .penutup-photo{
     width:100%;
@@ -2081,18 +2158,46 @@ body{
     }
 
 
-    /* 1 FOTO HERO */
+    /* =================================================
+       1 FOTO HERO - BINGKAI ULANG TAHUN MOBILE
+    ================================================= */
 
     .hero-photos{
         width:88vw;
-        margin-top:22px;
+
+        margin-top:28px;
+
+        padding:12px;
+
+        border-radius:24px;
+
+        border-width:2px;
+    }
+
+    .hero-photos::before{
+        top:-19px;
+        left:-12px;
+
+        font-size:24px;
+    }
+
+    .hero-photos::after{
+        right:-12px;
+        bottom:-17px;
+
+        font-size:24px;
     }
 
     .hero-photos img{
         width:100%;
+
         height:360px;
-        padding:4px;
-        border-radius:20px;
+
+        padding:5px;
+
+        border-width:2px;
+
+        border-radius:18px;
     }
 
 
@@ -2710,7 +2815,7 @@ body{
     <section class="section">
 
         <h2 class="section-title">
-            UCAPAN SPESIAL
+            Ucapan Spesial
         </h2>
 
         <div class="memories">
@@ -2790,7 +2895,6 @@ body{
 
     <!-- =================================================
          DOKUMENTASI
-         BACKGROUND TERPISAH
     ================================================= -->
 
     <div class="penutup-photos">
@@ -2847,7 +2951,7 @@ body{
             </div>
 
             <div class="credit-name">
-                mami rose
+                Mami Rose
             </div>
 
             <div class="credit-desc">
@@ -2889,8 +2993,6 @@ body{
 
 </audio>
 
-
-<!-- MUSIC BUTTON -->
 
 <button
     class="music-btn"
