@@ -434,6 +434,78 @@ body{
     display:flex;
 }
 
+
+/* =====================================================
+   COUNTDOWN 3 2 1
+===================================================== */
+
+.countdown-text{
+    position:absolute;
+
+    width:100%;
+
+    text-align:center;
+
+    font-size:
+        clamp(90px,22vw,220px);
+
+    font-weight:900;
+
+    color:#d6336c;
+
+    text-shadow:
+        0 6px 0 #fff,
+        0 15px 35px
+        rgba(150,30,80,.28);
+
+    opacity:0;
+
+    transform:
+        scale(.2);
+
+    pointer-events:none;
+}
+
+.countdown-text.show{
+    animation:
+        countdownPop
+        .8s
+        cubic-bezier(.22,1,.36,1)
+        forwards;
+}
+
+@keyframes countdownPop{
+
+    0%{
+        opacity:0;
+        transform:
+            scale(.2)
+            rotate(-10deg);
+    }
+
+    30%{
+        opacity:1;
+        transform:
+            scale(1.25)
+            rotate(5deg);
+    }
+
+    60%{
+        opacity:1;
+        transform:
+            scale(1)
+            rotate(0deg);
+    }
+
+    100%{
+        opacity:0;
+        transform:
+            scale(1.45)
+            rotate(5deg);
+    }
+}
+
+
 .intro-text{
     position:absolute;
     width:100%;
@@ -851,9 +923,6 @@ body{
         infinite;
 }
 
-
-/* DEKORASI ATAS KIRI */
-
 .hero-photos::before{
     content:"🎈  ✨";
 
@@ -875,9 +944,6 @@ body{
         );
 }
 
-
-/* DEKORASI BAWAH KANAN */
-
 .hero-photos::after{
     content:"✨  🎂";
 
@@ -898,9 +964,6 @@ body{
             rgba(100,30,60,.15)
         );
 }
-
-
-/* FOTO */
 
 .hero-photos img{
     display:block;
@@ -937,9 +1000,6 @@ body{
         0 18px 40px
         rgba(100,30,60,.28);
 }
-
-
-/* ANIMASI GLOW BINGKAI */
 
 @keyframes birthdayFrameGlow{
 
@@ -2132,6 +2192,11 @@ body{
         letter-spacing:4px;
     }
 
+    .countdown-text{
+        font-size:
+            clamp(90px,25vw,150px);
+    }
+
     .birthday-intro::before{
         font-size:22px;
         letter-spacing:18px;
@@ -2537,6 +2602,17 @@ body{
 <div
     class="birthday-intro"
     id="birthdayIntro">
+
+    <!-- COUNTDOWN -->
+
+    <div
+        class="countdown-text"
+        id="countdownText">
+        3
+    </div>
+
+
+    <!-- TEKS ULANG TAHUN -->
 
     <div class="intro-text intro-happy">
         HAPPY
@@ -3047,6 +3123,9 @@ const openButton =
 const birthdayIntro =
     document.getElementById("birthdayIntro");
 
+const countdownText =
+    document.getElementById("countdownText");
+
 const content =
     document.getElementById("content");
 
@@ -3125,6 +3204,8 @@ function bukaKartu(){
 
         mami.classList.remove("show");
 
+        countdownText.classList.remove("show");
+
 
         void happy.offsetWidth;
 
@@ -3132,14 +3213,63 @@ function bukaKartu(){
 
         void mami.offsetWidth;
 
+        void countdownText.offsetWidth;
+
+
+        /*
+         * ============================================
+         * COUNTDOWN
+         * 3 -> 2 -> 1
+         * ============================================
+         */
+
+        countdownText.textContent = "3";
+
+        countdownText.classList.add("show");
+
 
         setTimeout(function(){
+
+            countdownText.classList.remove("show");
+
+            void countdownText.offsetWidth;
+
+            countdownText.textContent = "2";
+
+            countdownText.classList.add("show");
+
+        },900);
+
+
+        setTimeout(function(){
+
+            countdownText.classList.remove("show");
+
+            void countdownText.offsetWidth;
+
+            countdownText.textContent = "1";
+
+            countdownText.classList.add("show");
+
+        },1800);
+
+
+        /*
+         * ============================================
+         * SETELAH COUNTDOWN
+         * HAPPY -> BIRTHDAY -> MAMI ROSE
+         * ============================================
+         */
+
+        setTimeout(function(){
+
+            countdownText.classList.remove("show");
 
             happy.classList.add(
                 "show"
             );
 
-        },300);
+        },2700);
 
 
         setTimeout(function(){
@@ -3148,7 +3278,7 @@ function bukaKartu(){
                 "show"
             );
 
-        },1800);
+        },4200);
 
 
         setTimeout(function(){
@@ -3157,8 +3287,14 @@ function bukaKartu(){
                 "show"
             );
 
-        },3600);
+        },6000);
 
+
+        /*
+         * ============================================
+         * SELESAI INTRO
+         * ============================================
+         */
 
         setTimeout(function(){
 
@@ -3210,7 +3346,7 @@ function bukaKartu(){
             },800);
 
 
-        },5700);
+        },8100);
 
 
     },500);
@@ -3917,6 +4053,11 @@ function tutupKartu(){
     birthdayIntro.classList.remove(
         "active",
         "finish"
+    );
+
+
+    countdownText.classList.remove(
+        "show"
     );
 
 
