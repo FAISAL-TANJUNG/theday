@@ -1044,7 +1044,6 @@ body{
     overflow:hidden;
     line-height:0;
 
-    /* Background khusus untuk area VIDEO */
     background:
         radial-gradient(
             circle at 15% 20%,
@@ -1906,11 +1905,9 @@ body{
 }
 
 .credit-from{
-    color:#378b6c;
+    color:#6b8078;
 
-    font-size:25px;
-
-    font-weight:800;
+    font-size:16px;
 
     margin-bottom:8px;
 }
@@ -1930,7 +1927,9 @@ body{
 
     font-weight:800;
 
-    text-transform:lowercase;
+    /* DIPERBAIKI:
+       nama tidak lagi otomatis huruf kecil */
+    text-transform:none;
 
     margin-bottom:18px;
 }
@@ -2279,6 +2278,7 @@ body{
         font-size:26px;
     }
 
+
 /* =================================================
    1 FOTO HERO - BINGKAI ULANG TAHUN MOBILE
 ================================================= */
@@ -2314,9 +2314,11 @@ body{
     object-fit:contain;
     box-sizing:border-box;
 }
-    /* =================================================
-       DOKUMENTASI MOBILE
-    ================================================= */
+
+
+/* =================================================
+   DOKUMENTASI MOBILE
+================================================= */
 
     .penutup-photos{
         width:100%;
@@ -2352,9 +2354,9 @@ body{
     }
 
 
-    /* =================================================
-       CLOSING MOBILE
-    ================================================= */
+/* =================================================
+   CLOSING MOBILE
+================================================= */
 
     .closing{
         padding:
@@ -2428,7 +2430,7 @@ body{
     }
 
 
-    /* FRAME MOBILE */
+/* FRAME MOBILE */
 
     .website-frame::before{
         inset:7px;
@@ -2524,11 +2526,11 @@ body{
     }
 
 
+/* =================================================
+   PANTUN RESPONSIF HP
+   HP: FOTO DI ATAS, PANTUN DI BAWAH
+================================================= */
 
-    /* =================================================
-       PANTUN RESPONSIF HP
-       HP: FOTO DI ATAS, PANTUN DI BAWAH
-    ================================================= */
     .pantun-section{
         width:100%;
         padding:45px 14px 55px;
@@ -2590,8 +2592,10 @@ body{
 }
 
 
+/* =====================================================
+   VIDEO: SATU BINGKAI PINK + BALON
+===================================================== */
 
-/* ===== VIDEO: SATU BINGKAI PINK + BALON ===== */
 .birthday-video{
     position:relative !important;
     width:min(1200px,96vw) !important;
@@ -2602,11 +2606,28 @@ body{
     border-radius:30px !important;
     overflow:visible !important;
     line-height:0 !important;
+
     background:
-        radial-gradient(circle at 15% 20%,rgba(255,255,255,.95),transparent 32%),
-        radial-gradient(circle at 85% 80%,rgba(255,215,235,.85),transparent 38%),
-        linear-gradient(135deg,#ffd6e8,#fff0f7,#f8c8df) !important;
-    box-shadow:0 12px 30px rgba(230,90,145,.18) !important;
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(255,255,255,.95),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(255,215,235,.85),
+            transparent 38%
+        ),
+        linear-gradient(
+            135deg,
+            #ffd6e8,
+            #fff0f7,
+            #f8c8df
+        ) !important;
+
+    box-shadow:
+        0 12px 30px
+        rgba(230,90,145,.18) !important;
 }
 
 .birthday-video::before,
@@ -2616,7 +2637,12 @@ body{
     font-size:42px !important;
     line-height:1 !important;
     pointer-events:none !important;
-    filter:drop-shadow(0 5px 5px rgba(200,70,120,.18));
+
+    filter:
+        drop-shadow(
+            0 5px 5px
+            rgba(200,70,120,.18)
+        );
 }
 
 .birthday-video::before{
@@ -2645,6 +2671,7 @@ body{
 }
 
 @media(max-width:600px){
+
     .birthday-video{
         width:94vw !important;
         margin-top:28px !important;
@@ -2660,14 +2687,20 @@ body{
         top:-21px !important;
     }
 
-    .birthday-video::before{ left:12px !important; }
-    .birthday-video::after{ right:12px !important; }
+    .birthday-video::before{
+        left:12px !important;
+    }
+
+    .birthday-video::after{
+        right:12px !important;
+    }
 
     .birthday-video video{
         padding:0 !important;
         border:0 !important;
         border-radius:16px !important;
     }
+
 }
 
 </style>
@@ -2741,16 +2774,12 @@ body{
     class="birthday-intro"
     id="birthdayIntro">
 
-    <!-- COUNTDOWN -->
-
     <div
         class="countdown-text"
         id="countdownText">
         3
     </div>
 
-
-    <!-- TEKS ULANG TAHUN -->
 
     <div class="intro-text intro-happy">
         HAPPY
@@ -2864,10 +2893,10 @@ body{
     ================================================= -->
 
     <div class="video-section-title">
-    🎬💖 Video Ucapan Singkat 💖🎬
-</div>
+        🎬💖 Video Ucapan Singkat 💖🎬
+    </div>
 
-<div class="birthday-video">
+    <div class="birthday-video">
 
         <video
             src="images/video.mp4"
@@ -2907,9 +2936,7 @@ body{
                     </div>
 
                     <div class="chat-bubble">
-
                         💕 Hari ini bukan hanya tentang bertambahnya usia, tapi tentang merayakan seseorang yang keberadaannya begitu berarti.
-
                     </div>
 
                 </div>
@@ -2931,9 +2958,7 @@ body{
                     </div>
 
                     <div class="chat-bubble">
-
                         🌷 Semoga selalu diberikan banyak alasan untuk bahagia, banyak momen untuk tersenyum, dan banyak orang yang tulus menyayangi Mami.
-
                     </div>
 
                 </div>
@@ -2955,9 +2980,7 @@ body{
                     </div>
 
                     <div class="chat-bubble">
-
                         ❤️ Semoga segala lelah yang pernah di rasakan digantikan dengan hari-hari yang lebih tenang dan penuh kebahagiaan.
-
                     </div>
 
                 </div>
@@ -2979,9 +3002,7 @@ body{
                     </div>
 
                     <div class="chat-bubble">
-
                         🥰 Kalau suatu saat hari terasa berat, semoga Mami selalu ingat bahwa ada seseorang yang begitu menyayangi dan menghargai keberadaan Mami.
-
                     </div>
 
                 </div>
@@ -3003,9 +3024,7 @@ body{
                     </div>
 
                     <div class="chat-bubble">
-
                         ✨ Terima kasih untuk semua hal kecil maupun besar yang mungkin tidak selalu terlihat, tetapi ternyata begitu berarti.
-
                     </div>
 
                 </div>
@@ -3027,9 +3046,7 @@ body{
                     </div>
 
                     <div class="chat-bubble">
-
                         🎂 Selamat ulang tahun, Mami. Semoga tahun ini menjadi awal dari banyak cerita indah yang belum pernah Mami temukan sebelumnya.
-
                     </div>
 
                 </div>
@@ -3174,14 +3191,27 @@ body{
         </div>
 
 
+        <!-- =============================================
+             PENUTUP SUDAH DIUBAH SESUAI PERMINTAAN
+             
+             DARI
+             DEDE SENG
+             UNTUK
+             MAMI ROSE
+        ============================================== -->
+
         <div class="closing-credit">
 
             <div class="credit-from">
-                Dari Dede Seng
+                Dari
+            </div>
+
+            <div class="credit-name">
+                Dede Seng
             </div>
 
             <div class="credit-for">
-                untuk
+                Untuk
             </div>
 
             <div class="credit-name">
@@ -3189,11 +3219,11 @@ body{
             </div>
 
             <div class="credit-desc">
-                dirancang web khusus untuk orang spesial
+                Dirancang web khusus untuk orang spesial
             </div>
 
             <div class="credit-by">
-                by faisal/Dede Seng
+                Developer by faisal/Dede Seng
             </div>
 
         </div>
@@ -3374,13 +3404,6 @@ function bukaKartu(){
         void countdownText.offsetWidth;
 
 
-        /*
-         * ============================================
-         * COUNTDOWN
-         * 3 -> 2 -> 1
-         * ============================================
-         */
-
         countdownText.textContent = "3";
 
         countdownText.classList.add("show");
@@ -3412,13 +3435,6 @@ function bukaKartu(){
         },1800);
 
 
-        /*
-         * ============================================
-         * SETELAH COUNTDOWN
-         * HAPPY -> BIRTHDAY -> MAMI ROSE
-         * ============================================
-         */
-
         setTimeout(function(){
 
             countdownText.classList.remove("show");
@@ -3447,12 +3463,6 @@ function bukaKartu(){
 
         },6000);
 
-
-        /*
-         * ============================================
-         * SELESAI INTRO
-         * ============================================
-         */
 
         setTimeout(function(){
 
